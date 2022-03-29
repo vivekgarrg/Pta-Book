@@ -16,9 +16,11 @@ body{
     background-color: #02044A;
     flex-wrap: wrap;
     margin-top: -100px;
+    height: fit-content;
+    place-content: center;
 }
 .first{
-    width: 46%;
+    width: 63%;
     padding: 20px;
 }
 .text{
@@ -69,18 +71,14 @@ body{
 .social-media img{
     cursor: pointer;
 }
-.second{
-    width: 46%;
-    padding: 20px;
-}
+
 .contact-form{
     width: fit-content;
+    margin: auto;
     background-color: white;
-    margin-left: 200px;
     border-radius: 2%;
     padding: 30px;
-    padding-bottom: 100px;
-    
+    padding-bottom: 80px;
 }
 .contact-form label{
  font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -124,4 +122,23 @@ border-radius: 6px;
     border-radius: 5px;
     cursor: pointer;
 }
+.cross{
+  background-color: #FBCE08;
+  padding: 2px;
+  border-radius: 50%;
+  margin-top: -100px;
+  margin-left: 300px;
+  cursor: pointer;
+}
 
+@media only screen and (max-width: 600px){
+    .container{
+        padding-bottom: 10px;
+    }
+    .first{
+        visibility:collapse;
+    }
+    .contact-form{
+        margin-top: -400px;
+    }
+}

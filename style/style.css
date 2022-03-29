@@ -93,17 +93,3 @@
    margin-top: 30px;
    cursor: pointer;
 }
-@media only screen and (max-width: 600px){
-    .logo img{
-        margin-top: -40px;
-        max-width: 120px;
-        height: auto;
-    }
-    .item:nth-child(2)
-    {
-        visibility: hidden;
-    }
-    .btn{
-        width: fit-content;
-    }
-}
