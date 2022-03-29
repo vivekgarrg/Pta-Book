@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-color: #261B27;
+}
+.logo{
+    margin-top: -90px;
+}
+.container{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    background-color: #02044A;
+    flex-wrap: wrap;
+}
+.first{
+    width: 50%;
+}
+.second{
+    width: 50%;
+}
+
+.first h2{
+    color: white;
+    text-align: center;
+}
