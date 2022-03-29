@@ -15,15 +15,61 @@ body{
     display: flex;
     background-color: #02044A;
     flex-wrap: wrap;
+    margin-top: -100px;
 }
 .first{
-    width: 50%;
+    width: 45%;
+    padding: 20px;
+}
+.text{
+    color: white;
+    text-align: center;
+    font-weight: 20;
+
+}
+.call{
+   width: fit-content;
+   margin: auto;
+   padding: 5px;
+   color: white;
+}
+.call:hover{
+    border: 2px solid #0C75FF;;
+    border-radius: 6px;
+}
+.email{
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    color: white;
+}
+.email:hover{
+    border: 2px solid #0C75FF;
+    border-radius: 6px;
+}
+.map{
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    color: white;
+}
+.map:hover{
+    border: 2px solid #0C75FF;
+    border-radius: 6px;
+}
+.sub-text{
+    text-align: center;
+    color: white;
+    opacity: 0.5;
+}
+.social-media{
+    display: flex;
+    justify-content:space-evenly;
+}
+.social-media img{
+    cursor: pointer;
 }
 .second{
     width: 50%;
 }
 
-.first h2{
-    color: white;
-    text-align: center;
-}
