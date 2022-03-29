@@ -78,6 +78,14 @@ let signIn=async()=>{
     }
     
 }
-
+let cross = ()=>{
+    window.location.href = "index.html"
+}
+let join = ()=>{
+    window.location.href = "signup.html"
+}
+let contactUs = ()=>{
+    window.location.href = "contactus.html"
+}
 
  

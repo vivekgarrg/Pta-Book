@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signin.css">
-    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Sign In</title>
 </head>
 <body>
+    
     <img  class="logo" src="assets/पताBook (4).png" width="300" height="300" alt="">
     <div class="container">
+        <img onclick="cross()" class="cross" src="assets/close.png" width="20" height="20" alt="">
         <h1 class="heading">Sign In</h1>
         <input onchange="sData()" id="sEmail" class="email" type="text" placeholder="Email"><br><br><br>
         <input onchange="sData()" id="sPassword" class="password" type="text" placeholder="Password"><br><br><br>
         <div class="btn"> <button onclick="signIn()">Sign In</button></div>
-       
+        
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
