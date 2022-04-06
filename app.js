@@ -77,7 +77,7 @@ let signIn=async()=>{
     await userDetails()
     if(userDet.password == sp && userDet.email == se){
          localStorage.setItem('id',id);
-        window.location.href = `/user.html`
+        window.location.href = `user.html`
     }
     else if(userDet.email == se){
         document.getElementById('error').innerText = "Please Enter a correct Password!!."
@@ -99,18 +99,18 @@ let signIn=async()=>{
 let checkUser = ()=>{
     let id  = localStorage.getItem('id')
     if(id!=null){
-        window.location.href = '/user.html';
+        window.location.href = 'user.html';
     }   
 }
 checkUser()
 let cross = ()=>{
-    window.location.href = "/index.html"
+    window.location.href = "index.html"
 }
 let join = ()=>{
-    window.location.href = "/signup.html"
+    window.location.href = "signup.html"
 }
 let contactUs = ()=>{
-    window.location.href = "/contactus.html"
+    window.location.href = "contactus.html"
 }
 
  
