@@ -17,9 +17,9 @@ let renderUser=async()=>{
                 <div class="card bg-primary mb-3" style="max-width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Name: ${add.name}</h5>
-                  <p class="card-text">City: ${add.city}</p>
-                  <p class="card-text">Mobile: +91  ${add.mobile}</p>
-                  <p class="card-text">Email: ${add.email}</p>
+                  <p class="card-text">City: <span class="card-t">&nbsp; ${add.city}</span></p>
+                  <p class="card-text">Mobile:<span class="card-t"> +91  ${add.mobile}</span> </p>
+                  <p class="card-text">Email: <span class="card-t"> &nbsp; ${add.email}</span></p>
                 </div>
               </div>
               </div>`

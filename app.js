@@ -56,9 +56,10 @@ let signUp=async()=>{
         await userReg()
 
        globalStore.push({email:`${e}`,id:`${id}`})
+   
        await postData()
        await fetchData()
-       console.log(globalStore);
+       window.location.href = "signin.html"
     }
     }catch(err){
         alert(err)
@@ -112,5 +113,13 @@ let join = ()=>{
 let contactUs = ()=>{
     window.location.href = "contactus.html"
 }
-
+let github = ()=>{
+window.location.href = "https://github.com/vivekgarrg"
+}
+let insta = ()=>{
+    window.location.href = "https://www.instagram.com/vivekgarrg/"
+}
+let linkedIn =()=>{
+    window.location.href = "https://www.linkedin.com/in/vivekgarrg/"
+}
  

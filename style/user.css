@@ -42,3 +42,17 @@ body{
     margin: auto;
     margin-top: 4px;
 }
+.card-t{
+    color: white;
+    opacity: 0.8;
+    font-weight: bold;
+}
+.card-text{
+    color: black;
+    font-weight: bold;
+}
+.card-title{
+    color: black;
+    font-weight: bolder;
+    
+}
