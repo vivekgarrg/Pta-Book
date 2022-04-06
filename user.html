@@ -20,13 +20,15 @@
                 <h1 style="color: #FBCE08; font-weight: bold;margin-top: 1rem;">पताBook</h1>
             </div>
             <div class="col-6 col-md-8"></div>
-            <button onclick="Logout()" class=" col-3 col-md-1 mt-1  btn btn-sm btn-danger"
-                style="padding: 0%;">Logout</button>
+            <div class="col-3 col-md-1 mt-1">
+                <button onclick="Logout()" class="   btn btn-lg btn-danger">Logout</button>
+            </div>
+            
         </div>
         <div class="row">
             
                <div class="contact-container bg-warning">
-                   <h2 style="text-align: center;">Add Address</h2>
+                   <h2 style="text-align: center;font-family: cursive;color: white;opacity: 0.7;">Add Address</h2>
                     <div class="contact-input">
                        <placeholder for="name">Name</placeholder> <br>
                        <input  type="text" id="name">
@@ -38,6 +40,10 @@
                      <div class="contact-input">
                         <placeholder for="name">Mobile</placeholder> <br>
                         <input  type="text" id="mobile">
+                     </div>
+                     <div class="contact-input">
+                        <placeholder for="email">Email</placeholder> <br>
+                        <input  type="text" id="email">
                      </div>
                      <div class="contact-btn">
                         <button class=" btn btn-primary" onclick="addContact()">ADD</button>

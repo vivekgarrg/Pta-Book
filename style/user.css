@@ -13,14 +13,21 @@ body{
     width: 300px;
     border: none;
     height: 35px;
-    /* border: 5px solid red ; */
-    border-radius: 4%;
-    border: 3px solid gray;
-    /* border: 2px solid #0C75FF; */
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid brown;
+    color: brown;
+    padding-left: 5px;
+    font-weight: bold;
+
 }
 .contact-container input:focus{
     outline: none;
     border: 2px solid purple;
+}
+.contact-container placeholder{
+    color: brown;
+    font-weight: bold;
 }
 .contact-container{
     width: fit-content;

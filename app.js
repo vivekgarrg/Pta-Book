@@ -80,13 +80,29 @@ let signIn=async()=>{
         window.location.href = `/user.html`
     }
     else if(userDet.email == se){
-        alert("Enter the correct password");
+        document.getElementById('error').innerText = "Please Enter a correct Password!!."
+        document.getElementById('sPassword').value = ""
+        setTimeout(()=>{
+            document.getElementById('error').innerText = ""   
+        },2000)
     }
     else{
-        alert("Invalid User!!!")
+        document.getElementById('error').innerText = "Invalid User!!."
+        document.getElementById('sEmail').value = ""
+        document.getElementById('sPassword').value = ""
+        setTimeout(()=>{
+            document.getElementById('error').innerText = ""   
+        },2000)
     }
 }
 
+let checkUser = ()=>{
+    let id  = localStorage.getItem('id')
+    if(id!=null){
+        window.location.href = '/user.html';
+    }   
+}
+checkUser()
 let cross = ()=>{
     window.location.href = "/index.html"
 }
