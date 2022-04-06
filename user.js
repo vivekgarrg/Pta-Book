@@ -1,7 +1,7 @@
 let renderUser=async()=>{
     let userId = localStorage.getItem('id');
     if(userId==null){
-        window.location.href = 'signin.html'
+        window.location.href = 'index.html'
     }else{
         mydata = []
         let addressData = await axios.get(`https://6242a935d126926d0c54acc5.mockapi.io/api/adress/users/${userId}`)
