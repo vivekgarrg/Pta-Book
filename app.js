@@ -9,6 +9,8 @@ var sp = ''
 var se = ''
 var userDet
 
+var add = []
+
 let data=()=>{
     n = document.getElementById('name').value
     e = document.getElementById('email').value
@@ -74,18 +76,25 @@ let signIn=async()=>{
     console.log(id)
     await userDetails()
     if(userDet.password == sp && userDet.email == se){
-        alert('hello user')
+         localStorage.setItem('id',id);
+        window.location.href = `/user.html`
     }
-    
+    else if(userDet.email == se){
+        alert("Enter the correct password");
+    }
+    else{
+        alert("Invalid User!!!")
+    }
 }
+
 let cross = ()=>{
-    window.location.href = "index.html"
+    window.location.href = "/index.html"
 }
 let join = ()=>{
-    window.location.href = "signup.html"
+    window.location.href = "/signup.html"
 }
 let contactUs = ()=>{
-    window.location.href = "contactus.html"
+    window.location.href = "/contactus.html"
 }
 
  
